@@ -33,7 +33,7 @@ body {
   }
 
   .container::before {
-    background: url(assets/images/heading-bg-mobile.jpg) top no-repeat;
+    background: url(assets/images/mobile/heading-bg.jpg) top no-repeat;
     background-size: cover;
     filter: grayscale(100%) brightness(650%);
     position: absolute;
@@ -52,7 +52,7 @@ body {
     font-family: var(--cocogoose);
     font-size: 2.1rem;
     line-height: 1;
-    background: url(assets/images/maintitle-bg.png) center no-repeat;
+    background: url(assets/images/mobile/maintitle-bg.png) center no-repeat;
     background-size: cover;
     -webkit-background-clip: text;
     color: transparent;
@@ -72,5 +72,56 @@ body {
 
   .event-place {
     font-size: 1.1rem;
+  }
+
+  /* Event Section */
+  .event-section {
+    display: grid;
+    padding: 5%;
+    margin-top: 250px;
+    background: url(assets/images/mobile/event-bg.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  .event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-block: 30px;
+    margin-inline: 3%;
+  }
+  
+  .event-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    backdrop-filter: saturate(150%) brightness(150%);
+    padding-inline: 15px;
+    width: 100%;
+    height: 100px;
+  }
+
+  .event-title {
+    color: var(--primary-red);
+  }
+
+  .event-detail {
+    color: var(--light);
+  }
+
+  .event-btn-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .event-btn {
+    background-color: var(--primary-red);
+    width: 75%;
+    padding: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
   }
 }
