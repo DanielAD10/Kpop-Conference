@@ -1,0 +1,20 @@
+{
+  "name": "kpop-conference",
+  "version": "1.0.0",
+  "description": "<a name=\"readme-top\"></a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielAD10/Kpop-Conference.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielAD10/Kpop-Conference/issues"
+  },
+  "homepage": "https://github.com/DanielAD10/Kpop-Conference#readme"
+}
