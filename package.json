@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DanielAD10/Kpop-Conference/issues"
   },
-  "homepage": "https://github.com/DanielAD10/Kpop-Conference#readme"
+  "homepage": "https://github.com/DanielAD10/Kpop-Conference#readme",
+  "devDependencies": {
+    "hint": "^7.1.8"
+  }
 }
