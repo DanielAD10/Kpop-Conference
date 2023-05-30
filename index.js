@@ -1,4 +1,4 @@
-const menu = document.querySelector(".menu");
+const menu = document.querySelector(".overlay");
 
 const openMenu = () => {
     document.body.classList.add('stop-scrolling');
