@@ -124,4 +124,114 @@ body {
     font-size: 1.1rem;
     cursor: pointer;
   }
+
+  /* Member Section */
+  .member-section {
+    display: grid;
+  }
+
+  .member-container {
+    margin-block: 35px;
+    display: grid;
+    padding-inline: 5%;
+    gap: 30px;
+    transition: height 0.7s;
+  }
+
+  .member-card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .member-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .member-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .member-name {
+    font-size: 1.1rem;
+  }
+
+  .member-role {
+    font-size: small;
+    font-style: italic;
+    color: var(--primary-red);
+  }
+
+  .divider {
+    width: 50px;
+  }
+
+  .member-about {
+    font-size: small;
+    color: var(--dark);
+    line-height: 1.5;
+  }
+
+  .more-btn {
+    width: 100%;
+    border: 1px solid var(--light);
+    justify-content: center;
+    font-size: 1rem;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+  }
+
+  /* Sponsered Section */
+  .sponsered-section {
+    background-color: var(--dark);
+    padding: 30px;
+  }
+
+  .sponsered-container {
+    display: grid;
+    gap: 10px;
+  }
+
+  .sponsered-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-size {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-size-bp {
+    width: 150px;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    filter: grayscale(100%);
+  }
+
+  .footer-logo {
+    width: 100px;
+  }
+
+  .footer-text {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    color: var(--light);
+    font-weight: bold;
+  }
 }
