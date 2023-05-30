@@ -13,7 +13,21 @@
     <!-- Navbar Section -->
     <header class="container">
         <nav class="nav">
-            <div class="nav-btn">
+            <div class="overlay hidden">
+                <div class="menu">
+                    <div class="close-btn" onclick="closeMenu()">
+                        <img src="assets/icons/close-btn.png" alt="close btn">
+                    </div>
+                    <ul class="menu-box">
+                        <li class="menu-items"><a href="index.html">Home</a></li>
+                        <li class="menu-items"><a href="about.html">About</a></li>
+                        <li class="menu-items"><a href="overview.html">Overview</a></li>
+                        <li class="menu-items"><a href="past.html">Past Events</a></li>
+                        <li class="menu-items"><a href="sponsor.html">Sponsor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-btn" onclick="openMenu()">
                 <img src="assets/icons/menu.svg" alt="humburger">
             </div>
         </nav>
