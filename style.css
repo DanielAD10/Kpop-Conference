@@ -27,9 +27,17 @@ body {
   color: #272a31;
 }
 
+.hidden {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-btn {
     margin: 10px;
+  }
+
+  .menu {
+    
   }
 
   .container::before {
