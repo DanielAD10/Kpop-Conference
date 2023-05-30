@@ -296,4 +296,40 @@ body {
     color: var(--light);
     font-weight: bold;
   }
+
+  /* About Page */
+  .head-title {
+    font-family: var(--cocogoose);
+    color: var(--primary-red);
+  }
+
+  .yg {
+    text-decoration: none;
+    color: var(--dark);
+    cursor: pointer;
+  }
+
+  .yg:hover {
+    color: var(--primary-red);
+  }
+
+  /* About Section */
+  .about-section {
+    display: grid;
+    padding: 30px;
+    border-bottom: 1px solid var(--light);
+    margin-top: 350px;
+    gap: 10px;
+    text-align: center;
+    background: white;
+  }
+
+  .about-logo-box {
+    border: 1px solid var(--light);
+  }
+
+  .about-logo {
+    width: 300px;
+    height: 200px;
+  }
 }
