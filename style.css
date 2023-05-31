@@ -332,4 +332,54 @@ body {
     width: 300px;
     height: 200px;
   }
+
+  /* Past Events Section */
+  .past-event-section {
+    display: grid;
+    padding: 30px;
+  }
+
+  .past-event-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .past-event-box {
+    background-color: var(--primary-red);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .event-2011 {
+    background-image: url(assets/images/mobile/yg-concert-2011.jpg);
+  }
+
+  .event-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+  }
+
+  .past-event-date {
+    font-weight: bold;
+    font-family: var(--cocogoose);
+    font-size: 1.3rem;
+  }
+
+  .past-event-title {
+    font-weight: bold;
+    font-family: var(--cocogoose);
+    font-size: 1.1rem;
+  }
 }
