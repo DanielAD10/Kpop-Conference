@@ -12,7 +12,7 @@
 <body>
     <!-- Navbar Section -->
     <header class="container">
-        <nav class="nav">
+        <nav class="nav des-hidden">
             <div class="overlay hidden">
                 <div class="menu">
                     <div class="close-btn" onclick="closeMenu()">
@@ -27,14 +27,36 @@
                     </ul>
                 </div>
             </div>
-            <div class="nav-btn" onclick="openMenu()">
+            <div class="nav-btn des-hidden" onclick="openMenu()">
                 <img src="assets/icons/menu.svg" alt="humburger">
+            </div>
+        </nav>
+        <!-- Desktop Navbar -->
+        <nav class="nav mobile-hidden">
+            <div class="first-nav">
+                <ul class="first-nav-box">
+                    <li class="first-nav-items"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="first-nav-items"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="first-nav-items"><a href="#">English</a></li>
+                    <li class="first-nav-items"><a href="#">My Page</a></li>
+                    <li class="first-nav-items"><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+            <div class="second-nav">
+                <a href="index.html" class="home-logo"><img src="assets/icons/yg-logo.png" alt="YG Entertainment"></a>
+                <ul class="menu-box">
+                    <li class="menu-items"><a href="about.html">About</a></li>
+                    <li class="menu-items"><a href="#event">Events</a></li>
+                    <li class="menu-items"><a href="#member">Members</a></li>
+                    <li class="menu-items"><a href="sponsor.html">Sponsor</a></li>
+                </ul>
+                <button class="menu-btn"><a href="#">BaeMon Concert</a></button>
             </div>
         </nav>
         <!-- Heading Content Section -->
         <div class="container">
-            <div class="text-center">
-                <h2 class="sub-title">YG New Girl Group</h2>
+            <div class="heading-container text-center">
+                <h2 class="sub-title home-hidden">YG New Girl Group</h2>
                 <h1 class="head-title">
                     Last Evaluation <br>
                     BABYMONS7ER <br>
@@ -43,7 +65,7 @@
                 <p class="article-text">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae assumenda eveniet corrupti! Quasi repellat velit veritatis sunt sequi hic, necessitatibus fugiat obcaecati praesentium neque vero, harum molestiae tenetur quod aliquid?
                 </p>
-                <p>More about <a href="https://www.ygfamily.com/" class="yg">YG Entertainment</a></p>
+                <p class="article-link">More about <a href="https://www.ygfamily.com/" class="yg">YG Entertainment</a></p>
             </div>
         </div>
     </header>

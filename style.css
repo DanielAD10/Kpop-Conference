@@ -518,7 +518,7 @@ body {
     background-color: var(--light);
     padding: 10px;
     border: 1px solid white;
-    width: 500px;
+    width: 60%;
   }
 
   .event-date {
@@ -703,5 +703,111 @@ body {
     line-height: 1.3;
     color: var(--light);
     font-weight: 400;
+  }
+
+  /* About Page Section */
+  .home-hidden {
+    display: none;
+  }
+
+  .head-title {
+    font-family: var(--cocogoose);
+    color: var(--primary-red);
+  }
+
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .article-link {
+    font-size: 1.3rem;
+  }
+
+  .yg {
+    text-decoration: none;
+    color: var(--dark);
+  }
+
+  .yg:hover {
+    color: var(--primary-red);
+  }
+
+  /* About Section */
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-bottom: 1px solid var(--light);
+    margin-top: 230px;
+    gap: 10px;
+    text-align: center;
+    background: white;
+  }
+
+  .about-logo-box {
+    border: 1px solid var(--light);
+    width: 40%;
+  }
+
+  .about-logo {
+    width: 300px;
+    height: 200px;
+  }
+
+  /* Past Events Section */
+  .past-event-section {
+    display: grid;
+    padding: 30px;
+  }
+
+  .past-event-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .past-event-box {
+    background-color: var(--primary-red);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    width: 30%;
+    height: 200px;
+  }
+
+  .event-2011 {
+    background-image: url(assets/images/mobile/yg-concert-2011.jpg);
+  }
+
+  .event-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+  }
+
+  .past-event-date {
+    font-weight: bold;
+    font-family: var(--cocogoose);
+    font-size: 1.3rem;
+  }
+
+  .past-event-title {
+    font-weight: bold;
+    font-family: var(--cocogoose);
+    font-size: 1.1rem;
   }
 }
