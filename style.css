@@ -17,7 +17,7 @@ html {
   --primary-red: #ec5242;
   --dark: #272a31;
   --light: #d3d3d3;
-  --max-container-dekstop: 1000px;
+  --max-container-dekstop: 1200px;
   --cocogoose: 'COCOGOOSE', sans-serif;
 }
 
@@ -37,6 +37,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  #hidden {
+    display: none;
+  }
+
   .nav-btn {
     margin: 10px;
   }
@@ -94,15 +98,22 @@ body {
     width: 30px;
   }
 
-  .container::before {
-    background: url(assets/images/mobile/heading-bg.jpg) top no-repeat;
+  .heading-box::before {
+    background-color: var(--light);
     background-size: cover;
-    filter: grayscale(100%) brightness(650%);
-    position: absolute;
+    background-position: center;
+    background-blend-mode: multiply;
     width: 100%;
     height: 100%;
+    position: absolute;
     left: 0;
+    top: 0;
     content: '';
+  }
+
+  .heading-background::before {
+    background-image: url(assets/images/mobile/heading-bg.jpg);
+    filter: grayscale(100%) brightness(300%);
     z-index: -1;
   }
 
@@ -208,8 +219,8 @@ body {
   }
 
   .member-img {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 200px;
   }
 
   .member-details {
@@ -239,14 +250,20 @@ body {
     line-height: 1.5;
   }
 
-  .more-btn {
-    width: 100%;
-    border: 1px solid var(--light);
+  .more-btn-box {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .more-btn {
+    border: 1px solid var(--light);
     font-size: 1rem;
     background-color: white;
     padding: 10px;
-    align-items: center;
+    text-align: center;
+    width: 60%;
   }
 
   /* Sponsered Section */
@@ -279,15 +296,16 @@ body {
   /* Footer */
   .footer {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 30px;
     gap: 30px;
-    filter: grayscale(100%);
   }
 
   .footer-logo {
-    width: 100px;
+    width: 100%;
+    max-width: 150px;
   }
 
   .footer-text {
@@ -295,5 +313,533 @@ body {
     line-height: 1.3;
     color: var(--light);
     font-weight: bold;
+  }
+
+  /* About Page */
+  .head-title {
+    font-family: var(--cocogoose);
+    color: var(--primary-red);
+  }
+
+  .yg {
+    text-decoration: none;
+    color: var(--dark);
+    cursor: pointer;
+  }
+
+  .yg:hover {
+    color: var(--primary-red);
+  }
+
+  /* About Section */
+  .about-section {
+    display: grid;
+    padding: 30px;
+    border-bottom: 1px solid var(--light);
+    margin-top: 250px;
+    gap: 10px;
+    text-align: center;
+    background: white;
+  }
+
+  .about-logo-box {
+    border: 1px solid var(--light);
+  }
+
+  .about-logo {
+    width: 300px;
+    height: 200px;
+  }
+
+  /* Past Events Section */
+  .past-event-section {
+    display: grid;
+    padding: 30px;
+  }
+
+  .past-event-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .past-event-box {
+    background-color: var(--primary-red);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 200px;
+  }
+
+  .event-2011 {
+    background-image: url(assets/images/mobile/yg-concert-2011.jpg);
+  }
+
+  .event-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+  }
+
+  .past-event-date {
+    font-weight: bold;
+    font-family: var(--cocogoose);
+    font-size: 1.3rem;
+  }
+
+  .past-event-title {
+    font-weight: bold;
+    font-family: var(--cocogoose);
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+  }
+
+  .first-nav {
+    background-color: var(--dark);
+    display: grid;
+    width: 100%;
+  }
+
+  .first-nav-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: var(--max-container-dekstop);
+  }
+
+  .menu-items {
+    font-size: 1.3rem;
+    padding: 10px;
+    font-weight: 450;
+  }
+
+  .menu-items a {
+    text-decoration: none;
+    color: var(--dark);
+  }
+
+  .menu-btn a {
+    text-decoration: none;
+    color: var(--primary-red);
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .first-nav-items a {
+    text-decoration: none;
+    color: var(--light);
+  }
+
+  .menu-items a:hover {
+    color: var(--primary-red);
+  }
+
+  .menu-btn {
+    padding: 15px;
+    border: 3px solid var(--primary-red);
+    background-color: white;
+  }
+
+  .menu-btn a:hover {
+    color: var(--primary-red);
+  }
+
+  .menu-btn:hover {
+    color: var(--primary-red);
+    background-color: var(--dark);
+  }
+
+  .first-nav-items {
+    padding: 5px;
+  }
+
+  .first-nav-items a:hover {
+    color: var(--primary-red);
+  }
+
+  .second-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    max-width: var(--max-container-dekstop);
+  }
+
+  .home-logo {
+    margin-left: 160px;
+  }
+
+  .home-logo img {
+    width: 250px;
+  }
+
+  .menu-box {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+  }
+
+  .heading-box {
+    margin-top: 200px;
+  }
+
+  .heading-box::before {
+    background-color: white;
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+  }
+
+  .heading-background::before {
+    background-image: url(assets/images/desktop/heading-bg-4.jpg);
+    filter: grayscale(500%) brightness(150%);
+    z-index: -1;
+  }
+
+  .sub-title {
+    color: var(--primary-red);
+  }
+
+  .main-title {
+    font-family: var(--cocogoose);
+    font-size: 2.7rem;
+    line-height: 1.1;
+    background: url(assets/images/mobile/maintitle-bg.png) center no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .article-text {
+    line-height: 20px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid var(--light);
+    width: 60%;
+  }
+
+  .event-date {
+    font-family: var(--cocogoose);
+    font-size: 1.3rem;
+  }
+
+  .event-place {
+    font-size: 1.1rem;
+  }
+
+  /* Event Section */
+  .event-section {
+    display: grid;
+    padding: 5%;
+    background: url(assets/images/mobile/event-bg.jpg) center no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+  }
+
+  .event-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-block: 30px;
+    margin-inline: 3%;
+  }
+
+  .event-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    backdrop-filter: saturate(150%) brightness(150%);
+    padding-inline: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 30px 5px;
+  }
+
+  .event-title {
+    color: var(--primary-red);
+    padding: 5px;
+  }
+
+  .event-detail {
+    color: var(--light);
+    padding: 5px;
+  }
+
+  .event-btn-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .event-btn {
+    background-color: var(--primary-red);
+    width: 75%;
+    padding: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  .solo-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Member Section */
+  .member-section {
+    display: grid;
+  }
+
+  .member-container {
+    margin-block: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 5%;
+    gap: 30px;
+    transition: height 0.7s;
+  }
+
+  .member-card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .member-img {
+    width: 180px;
+    height: 150px;
+  }
+
+  .member-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .member-name {
+    font-size: 1.1rem;
+  }
+
+  .member-role {
+    font-size: small;
+    font-style: italic;
+    color: var(--primary-red);
+  }
+
+  .divider {
+    width: 50px;
+  }
+
+  .member-about {
+    font-size: small;
+    color: var(--dark);
+    line-height: 1.5;
+  }
+
+  .more-btn {
+    width: 60%;
+    border: 1px solid var(--light);
+    justify-content: center;
+    font-size: 1rem;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+  }
+
+  /* Sponsered Section */
+  .sponsered-section {
+    background-color: var(--dark);
+    padding: 30px;
+  }
+
+  .sponsered-container {
+    display: grid;
+    gap: 10px;
+  }
+
+  .sponsered-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: var(--max-container-dekstop);
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .logo-size {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-size-bp {
+    width: 150px;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 50px;
+    background-color: var(--light);
+  }
+
+  .footer-logo {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-text {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    color: var(--dark);
+    font-weight: 400;
+
+    /* width: 60%; */
+  }
+
+  /* About Page Section */
+  .home-hidden {
+    display: none;
+  }
+
+  .head-title {
+    font-family: var(--cocogoose);
+    color: var(--primary-red);
+  }
+
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .article-link {
+    font-size: 1.3rem;
+  }
+
+  .yg {
+    text-decoration: none;
+    color: var(--dark);
+  }
+
+  .yg:hover {
+    color: var(--primary-red);
+  }
+
+  /* About Section */
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-bottom: 1px solid var(--light);
+    gap: 10px;
+    text-align: center;
+    background: white;
+  }
+
+  .about-logo-box {
+    border: 1px solid var(--light);
+    width: 40%;
+  }
+
+  .about-logo {
+    width: 300px;
+    height: 200px;
+  }
+
+  /* Past Events Section */
+  .past-event-section {
+    display: grid;
+    padding: 30px;
+  }
+
+  .past-event-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .past-event-box {
+    background-color: var(--primary-red);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    width: 30%;
+    height: 200px;
+  }
+
+  .event-2011 {
+    background-image: url(assets/images/mobile/yg-concert-2011.jpg);
+  }
+
+  .event-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+  }
+
+  .past-event-date {
+    font-weight: bold;
+    font-family: var(--cocogoose);
+    font-size: 1.3rem;
+  }
+
+  .past-event-title {
+    font-weight: bold;
+    font-family: var(--cocogoose);
+    font-size: 1.1rem;
   }
 }

@@ -4,38 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BABYMONS7ER</title>
+    <title>BABYMONS7ER | Home</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="display.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Navbar Section -->
     <header class="container">
-        <nav class="nav">
+        <!-- Mobile Navbar -->
+        <nav class="nav des-hidden">
             <div class="overlay hidden">
                 <div class="menu">
                     <div class="close-btn" onclick="closeMenu()">
                         <img src="assets/icons/close-btn.png" alt="close btn">
                     </div>
                     <ul class="menu-box">
-                        <li class="menu-items"><a href="index.html">Home</a></li>
-                        <li class="menu-items"><a href="about.html">About</a></li>
-                        <li class="menu-items"><a href="overview.html">Overview</a></li>
-                        <li class="menu-items"><a href="past.html">Past Events</a></li>
-                        <li class="menu-items"><a href="sponsor.html">Sponsor</a></li>
+                        <li class="menu-items"><a href="index.html" class="home-link">Home</a></li>
+                        <li class="menu-items"><a href="about.html" class="about-link">About</a></li>
+                        <li class="menu-items"><a href="#overview">Overview</a></li>
+                        <li class="menu-items"><a href="#past-event">Past Events</a></li>
+                        <li class="menu-items"><a href="#sponsor">Sponsor</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="nav-btn" onclick="openMenu()">
+            <div class="nav-btn des-hidden" onclick="openMenu()">
                 <img src="assets/icons/menu.svg" alt="humburger">
+            </div>
+        </nav>
+        <!-- Desktop Navbar -->
+        <nav class="nav mobile-hidden">
+            <div class="first-nav mobile-hidden">
+                <ul class="first-nav-box">
+                    <li class="first-nav-items"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="first-nav-items"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="first-nav-items"><a href="#">English</a></li>
+                    <li class="first-nav-items"><a href="https://danielad10.github.io/My-Portfolio/">My Page</a></li>
+                    <li class="first-nav-items"><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+            <div class="second-nav mobile-hidden">
+                <a href="index.html" class="home-logo"><img src="assets/icons/yg-logo.png" alt="YG Entertainment"></a>
+                <ul class="menu-box">
+                    <li class="menu-items"><a href="about.html" class="about-link">About</a></li>
+                    <li class="menu-items"><a href="#event">Events</a></li>
+                    <li class="menu-items"><a href="#member">Members</a></li>
+                    <li class="menu-items"><a href="#sponsor">Sponsor</a></li>
+                </ul>
+                <button class="menu-btn"><a href="#">BaeMon Concert</a></button>
             </div>
         </nav>
     </header>
     <!-- Heading Section -->
     <main>
         <section class="container-fluid">
-            <div class="container">
+            <div class="container heading-box heading-background">
                 <h2 class="sub-title">YG New Girl Group</h2>
                 <h1 class="main-title">
                     Last Evaluation
@@ -44,7 +68,7 @@
                     <br>
                     2023
                 </h1>
-                <p class="article-text">
+                <p class="article-text bg-light">
                     From April 26th to May 7th, 2023, the world's best 18teams made Berlin to their battle-ground, and just 8 of them have played at Velodrom arena in front of the live crowd.
                 </p>
                 <h2 class="event-date">2023 MAY 5 (FRI) ~ 7 (SUN)</h2>
@@ -52,7 +76,7 @@
             </div>
         </section>
         <!-- Event Section -->
-        <section class="event-section">
+        <section class="event-section" id="event">
             <h2 class="text-center text-light my-3">Main Event</h2>
             <div class="text-center">
                 <img src="assets/icons/divider-bar.svg" alt="Section divider bar">
@@ -64,7 +88,7 @@
                     <p class="event-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
                 <div class="event-card">
-                    <img src="assets/icons/solo.png" alt="Solo Icon">
+                    <img src="assets/icons/solo.png" alt="Solo Icon" class="solo-logo">
                     <h4 class="event-title">Solo</h4>
                     <p class="event-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
@@ -85,68 +109,53 @@
                 </div>
             </div>
             <div class="event-btn-box">
-                <button class="event-btn text-light">Get the tickets NOW!</button>
+                <button class="event-btn text-light des-hidden">Get the tickets NOW!</button>
+                <a href="#" class="text-light mobile-hidden">SEE THE WHOLE EVENT</a>
             </div>
         </section>
         <!-- Member Intro -->
-        <section class="member-section">
+        <section class="member-section" id="member">
             <h2 class="text-center text-dark my-3">Members</h2>
             <div class="text-center">
                 <img src="assets/icons/divider-bar.svg" alt="Section divider bar">
             </div>
-            <div class="member-container">
-                <div class="member-card">
-                    <img class="member-img" src="assets/images/mobile/ruka.jpg" alt="Ruka">
-                    <div class="member-details">
-                        <h4 class="member-name">Ruka Kawai</h4>
-                        <span class="member-role">Main Dancer, Main Rapper, Visual, Vocal</span>
-                        <hr class="divider">
-                        <p class="member-about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit magni omnis itaque nobis sequi blanditiis error nihil suscipit sint possimus earum, praesentium accusantium placeat?</p>
-                    </div>
-                </div>
-                <div class="member-card">
-                    <img class="member-img" src="assets/images/mobile/pharita.jpg" alt="Ruka">
-                    <div class="member-details">
-                        <h4 class="member-name">Pharita</h4>
-                        <span class="member-role">Dancer, Visual, Lead Vocal</span>
-                        <hr class="divider">
-                        <p class="member-about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit magni omnis itaque nobis sequi blanditiis error nihil suscipit sint possimus earum, praesentium accusantium placeat?</p>
-                    </div>
-                </div>
-                <button class="more-btn">
+            <div class="member-container"></div>
+            <div class="more-btn-box">
+                <button class="more-btn des-hidden" aria-expanded="false">
                     <span>More<i class="fa-solid fa-angle-down text-danger"></i></span>
                 </button>
             </div>
         </section>
         <!-- Sponsered Section -->
-        <section class="sponsered-section">
-            <div class="sponsered-container">
-                <h2 class="text-center text-light my-3">Partners</h2>
-                <div class="text-center">
-                    <img src="assets/icons/divider-bar.svg" alt="Section divider bar">
-                </div>
-                <div class="sponsered-box">
-                    <a href="https://www.ygfamily.com/"><img class="logo-size" src="assets/icons/yg.png" alt="YG Entertainment"></a>
-                    <a href="https://en.wikipedia.org/wiki/BigBang_(South_Korean_band)"><img class="logo-size" src="assets/icons/bigbang.png" alt="BigBang"></a>
-                    <a href="https://en.wikipedia.org/wiki/2NE1"><img class="logo-size" src="assets/icons/2ne1.png" alt="2NE1"></a>
-                    <a href="https://www.blackpinkmusic.com/"><img class="logo-size-bp" src="assets/icons/blackpink.png" alt="Blackpink"></a>
-                    <a href="https://en.wikipedia.org/wiki/The_Black_Label"><img class="logo-size" src="assets/icons/blacklabel.png" alt="The Black Label Entertainment"></a>
-                </div>
+    <section class="sponsered-section mobile-hidden" id="sponsor">
+        <div class="sponsered-container">
+            <h2 class="text-center text-light my-3">Partners</h2>
+            <div class="text-center">
+                <img src="assets/icons/divider-bar.svg" alt="Section divider bar">
             </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <a href="https://www.ygfamily.com/"><img class="footer-logo"src="assets/icons/footer.png" alt="YG Entertainment"></a>
+            <div class="sponsered-box">
+                <a href="https://www.ygfamily.com/"><img class="logo-size" src="assets/icons/yg.png" alt="YG Entertainment"></a>
+                <a href="https://en.wikipedia.org/wiki/BigBang_(South_Korean_band)"><img class="logo-size" src="assets/icons/bigbang.png" alt="BigBang"></a>
+                <a href="https://en.wikipedia.org/wiki/2NE1"><img class="logo-size" src="assets/icons/2ne1.png" alt="2NE1"></a>
+                <a href="https://www.blackpinkmusic.com/"><img class="logo-size-bp" src="assets/icons/blackpink.png" alt="Blackpink"></a>
+                <a href="https://en.wikipedia.org/wiki/The_Black_Label"><img class="logo-size" src="assets/icons/blacklabel.png" alt="The Black Label Entertainment"></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer mobile-hidden">
+        <a href="index.html"><img class="footer-logo"src="assets/icons/yg-logo.png" alt="YG Entertainment"></a>
         <p class="footer-text">Copyrights &#169; 2023,
             <br>
-            BABYMONS7ER 
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, eveniet 
             <br>
-            YG Entertainment 
-            <br>
-            All Rights Reserved
+            YG Entertainment, All Rights Reserved. 
         </p>
     </footer>
+    </main>
 
     <script src="index.js"></script>
+    <script type="module" src="data.js"></script>
+    <script type="module" src="member.js"></script>
 </body>
 </html>
