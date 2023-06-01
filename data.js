@@ -34,7 +34,7 @@ const members = [
     role: 'Vocalist, Dancer',
     about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit magni omnis itaque nobis sequi blanditiis error nihil suscipit sint possimus earum, praesentium accusantium placeat?',
     img: './assets/images/mobile/rora.jpg',
-  }
+  },
 ];
 
 export default members;
