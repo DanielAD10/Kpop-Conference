@@ -20,8 +20,8 @@
                         <img src="assets/icons/close-btn.png" alt="close btn">
                     </div>
                     <ul class="menu-box">
-                        <li class="menu-items"><a href="index.html">Home</a></li>
-                        <li class="menu-items"><a href="about.html">About</a></li>
+                        <li class="menu-items home-link"><a href="index.html">Home</a></li>
+                        <li class="menu-items about-link"><a href="about.html">About</a></li>
                         <li class="menu-items"><a href="overview.html">Overview</a></li>
                         <li class="menu-items"><a href="past.html">Past Events</a></li>
                         <li class="menu-items"><a href="sponsor.html">Sponsor</a></li>
@@ -34,7 +34,7 @@
         </nav>
         <!-- Desktop Navbar -->
         <nav class="nav mobile-hidden">
-            <div class="first-nav">
+            <div class="first-nav mobile-hidden">
                 <ul class="first-nav-box">
                     <li class="first-nav-items"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                     <li class="first-nav-items"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -43,7 +43,7 @@
                     <li class="first-nav-items"><a href="#">Log Out</a></li>
                 </ul>
             </div>
-            <div class="second-nav">
+            <div class="second-nav mobile-hidden">
                 <a href="index.html" class="home-logo"><img src="assets/icons/yg-logo.png" alt="YG Entertainment"></a>
                 <ul class="menu-box">
                     <li class="menu-items"><a href="about.html">About</a></li>
@@ -109,7 +109,7 @@
             </div>
             <div class="event-btn-box">
                 <button class="event-btn text-light des-hidden">Get the tickets NOW!</button>
-                <a href="#" class="text-light">SEE THE WHOLE EVENT</a>
+                <a href="#" class="text-light mobile-hidden">SEE THE WHOLE EVENT</a>
             </div>
         </section>
         <!-- Member Intro -->
@@ -118,32 +118,15 @@
             <div class="text-center">
                 <img src="assets/icons/divider-bar.svg" alt="Section divider bar">
             </div>
-            <div class="member-container">
-                <div class="member-card">
-                    <img class="member-img" src="assets/images/mobile/ruka.jpg" alt="Ruka">
-                    <div class="member-details">
-                        <h4 class="member-name">Ruka Kawai</h4>
-                        <span class="member-role">Main Dancer, Main Rapper, Visual, Vocal</span>
-                        <hr class="divider">
-                        <p class="member-about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit magni omnis itaque nobis sequi blanditiis error nihil suscipit sint possimus earum, praesentium accusantium placeat?</p>
-                    </div>
-                </div>
-                <div class="member-card">
-                    <img class="member-img" src="assets/images/mobile/pharita.jpg" alt="Ruka">
-                    <div class="member-details">
-                        <h4 class="member-name">Pharita</h4>
-                        <span class="member-role">Dancer, Visual, Lead Vocal</span>
-                        <hr class="divider">
-                        <p class="member-about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit magni omnis itaque nobis sequi blanditiis error nihil suscipit sint possimus earum, praesentium accusantium placeat?</p>
-                    </div>
-                </div>
-                <button class="more-btn des-hidden">
+            <div class="member-container"></div>
+            <div class="more-btn-box">
+                <button class="more-btn des-hidden" aria-expanded="false">
                     <span>More<i class="fa-solid fa-angle-down text-danger"></i></span>
                 </button>
             </div>
         </section>
         <!-- Sponsered Section -->
-    <section class="sponsered-section mobile-hidden>
+    <section class="sponsered-section">
         <div class="sponsered-container">
             <h2 class="text-center text-light my-3">Partners</h2>
             <div class="text-center">
@@ -159,7 +142,7 @@
         </div>
     </section>
     <!-- Footer Section -->
-    <footer class="footer mobile-hidden">
+    <footer class="footer">
         <a href="https://www.ygfamily.com/"><img class="footer-logo"src="assets/icons/yg-logo.png" alt="YG Entertainment"></a>
         <p class="footer-text">Copyrights &#169; 2023,
             <br>
@@ -173,5 +156,7 @@
     </main>
 
     <script src="index.js"></script>
+    <script type="module" src="data.js"></script>
+    <script type="module" src="member.js"></script>
 </body>
 </html>

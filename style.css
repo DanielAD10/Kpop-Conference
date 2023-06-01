@@ -37,6 +37,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  #hidden {
+    display: none;
+  }
+  
   .mobile-hidden {
     display: none;
   }
@@ -243,14 +247,20 @@ body {
     line-height: 1.5;
   }
 
-  .more-btn {
-    width: 100%;
-    border: 1px solid var(--light);
+  .more-btn-box {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .more-btn {
+    border: 1px solid var(--light);
     font-size: 1rem;
     background-color: white;
     padding: 10px;
-    align-items: center;
+    text-align: center;
+    width: 60%;
   }
 
   /* Sponsered Section */
@@ -644,7 +654,7 @@ body {
   }
 
   .more-btn {
-    width: 100%;
+    width: 60%;
     border: 1px solid var(--light);
     justify-content: center;
     font-size: 1rem;
