@@ -92,7 +92,8 @@ for eslint => run: npx eslint .
 
 The project is deployed at the following link...
 
-
+ https://danielad10.github.io/Kpop-Conference/
+ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
