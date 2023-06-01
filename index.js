@@ -37,14 +37,14 @@ window.addEventListener('DOMContentLoaded', () => {
     if (e.matches && memberExpanded !== true) {
       for (let i = 0; i < memberCard.length; i += 1) {
         if (i > 1) {
-          memberCard[i].style.display = "none";
+          memberCard[i].style.display = 'none';
           memberCard[i].setAttribute('data-visible', false);
         }
       }
     } else {
       for (let i = 0; i < memberCard.length; i += 1) {
         if (i > 1) {
-          memberCard[i].style.display = "flex";
+          memberCard[i].style.display = 'flex';
           memberCard[i].setAttribute('data-visible', true);
         }
       }
@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (memberExpanded === 'false') {
       for (let i = 0; i < memberCard.length; i += 1) {
         if (i > 1) {
-          memberCard[i].style.display = "flex";
+          memberCard[i].style.display = 'flex';
           memberCard[i].setAttribute('data-visible', true);
         }
       }
@@ -70,7 +70,7 @@ window.addEventListener('DOMContentLoaded', () => {
     } else if (memberExpanded === 'true') {
       for (let i = 0; i < memberCard.length; i += 1) {
         if (i > 1) {
-          memberCard[i].style.display = "none";
+          memberCard[i].style.display = 'none';
           memberCard[i].setAttribute('data-visible', false);
         }
       }
