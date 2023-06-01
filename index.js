@@ -20,12 +20,12 @@ window.addEventListener('DOMContentLoaded', () => {
   const aboutLink = document.querySelector('.about-link');
 
   if (url === '/index.html' || url === '/' || url === '/Kpop-Conference/index.html') {
-    homeLink.classList.add('text-red');
-    aboutLink.classList.remove('text-red');
+    homeLink.classList.add('text-danger');
+    aboutLink.classList.remove('text-danger');
   }
   if (url === '/about.html' || url === '/Kpop-Conference/about.html') {
-    aboutLink.classList.add('text-red');
-    homeLink.classList.remove('text-red');
+    aboutLink.classList.add('text-danger');
+    homeLink.classList.remove('text-danger');
   }
 
   const memberButton = document.querySelector('.more-btn');
