@@ -1,0 +1,13 @@
+/* Hide in desktop view */
+@media only screen and (min-width: 768px) {
+  .des-hidden {
+    display: none;
+  }
+}
+
+/* Hide in mobile view */
+@media only screen and (max-width: 768px) {
+  .mobile-hidden {
+    display: none;
+  }
+}

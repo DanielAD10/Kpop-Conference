@@ -34,13 +34,7 @@ const members = [
     role: 'Vocalist, Dancer',
     about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit magni omnis itaque nobis sequi blanditiis error nihil suscipit sint possimus earum, praesentium accusantium placeat?',
     img: './assets/images/mobile/rora.jpg',
-  },
-  {
-    name: 'Chiquita',
-    role: 'Vocalist, Dancer, Rapper, Maknae',
-    about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit magni omnis itaque nobis sequi blanditiis error nihil suscipit sint possimus earum, praesentium accusantium placeat?',
-    img: './assets/images/mobile/chiquita.jpg',
-  },
+  }
 ];
 
 export default members;

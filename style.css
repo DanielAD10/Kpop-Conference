@@ -41,10 +41,6 @@ body {
     display: none;
   }
 
-  .mobile-hidden {
-    display: none;
-  }
-
   .nav-btn {
     margin: 10px;
   }
@@ -223,8 +219,8 @@ body {
   }
 
   .member-img {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 200px;
   }
 
   .member-details {
@@ -300,15 +296,16 @@ body {
   /* Footer */
   .footer {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 30px;
     gap: 30px;
-    filter: grayscale(100%);
   }
 
   .footer-logo {
-    width: 100px;
+    width: 100%;
+    max-width: 150px;
   }
 
   .footer-text {
@@ -406,14 +403,15 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .des-hidden {
-    display: none;
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
   }
 
   .first-nav {
-    position: absolute;
-    left: 0;
-    right: 0;
     background-color: var(--dark);
     display: grid;
     width: 100%;
@@ -487,32 +485,47 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 35px;
     padding: 10px;
     max-width: var(--max-container-dekstop);
   }
 
+  .home-logo {
+    margin-left: 160px;
+  }
+  
   .home-logo img {
     width: 250px;
   }
-
+  
   .menu-box {
     list-style: none;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 25px;
     margin: 0;
   }
 
-  .container::before {
-    background: url(assets/images/desktop/des-bg-2.jpg) top no-repeat;
+  .heading-box {
+    margin-top: 200px;
+  }
+
+  .heading-box::before {
+    background-color: white;
     background-size: cover;
-    filter: grayscale(100%) brightness(650%);
-    position: absolute;
+    background-position: top;
+    background-blend-mode: multiply;
     width: 100%;
     height: 100%;
+    position: absolute;
     left: 0;
+    top: 0;
     content: '';
+  }
+
+  .heading-background::before {
+    background-image: url(assets/images/desktop/heading-bg-4.jpg);
+    filter: grayscale(500%) brightness(150%);
     z-index: -1;
   }
 
@@ -532,9 +545,9 @@ body {
 
   .article-text {
     line-height: 20px;
-    background-color: var(--light);
+    background-color: white;
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid var(--light);
     width: 60%;
   }
 
@@ -542,7 +555,7 @@ body {
     font-family: var(--cocogoose);
     font-size: 1.3rem;
   }
-
+  
   .event-place {
     font-size: 1.1rem;
   }
@@ -553,7 +566,7 @@ body {
     padding: 5%;
     background: url(assets/images/mobile/event-bg.jpg) center no-repeat;
     background-size: cover;
-    margin-top: 277px;
+    margin-top: 40px;
   }
 
   .event-container {
@@ -629,8 +642,8 @@ body {
   }
 
   .member-img {
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 150px;
   }
 
   .member-details {
@@ -708,18 +721,20 @@ body {
     align-items: center;
     padding: 30px;
     gap: 50px;
-    filter: grayscale(100%);
+    background-color: var(--light);
   }
 
   .footer-logo {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
   }
 
   .footer-text {
     font-size: 1.1rem;
     line-height: 1.3;
-    color: var(--light);
+    color: var(--dark);
     font-weight: 400;
+    /* width: 60%; */
   }
 
   /* About Page Section */
@@ -762,7 +777,6 @@ body {
     justify-content: center;
     padding: 30px;
     border-bottom: 1px solid var(--light);
-    margin-top: 230px;
     gap: 10px;
     text-align: center;
     background: white;
